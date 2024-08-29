@@ -1,0 +1,105 @@
+@import './../../variables.scss';
+
+.contact-page {
+    // .contact-banner {
+    //     background-color: $bglightgray;
+    //     .container {
+    //         text-align: center;
+    //         padding-top: 96px;
+    //         padding-bottom: 96px;
+
+    //         h1 {
+    //             font-size: 64px;
+    //         }
+    //     }        
+    // }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        .contact-left {
+            h2 {
+                font-size: 48px;
+                margin-bottom: 16px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .contact-col {
+                padding-top: 16px;
+                padding-bottom: 16px;
+                h5 {
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+                p {
+                    a {
+                        color: $blue;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+        .contact-card {
+            background-color: $bglightgray;
+            padding: 40px;
+            border-radius: 24px;
+            height: fit-content;
+            
+            h5 {
+                margin-bottom: 24px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                margin-top: 32px;
+                margin-bottom: 32px;
+
+                input, textarea {
+                    font-family: Roboto, Helvetica, Arial, sans-serif;
+                    font-size: 18px;
+                    color: $grey-800;
+                    padding: 16px;
+                    border-radius: 8px;
+                    border: 1px solid $bglightgray;
+                    margin-bottom: 16px;
+
+                    &:focus {
+                        // border-color: $blue;
+                        // border: 2px solid $blue !important;
+                    }
+                }
+                textarea {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    .contact-page {
+        &.container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .contact-grid {
+                display: flex !important;
+                flex-direction: column !important;
+
+                .contact-card {
+                    padding: 40px 20px;
+                    margin-top: 40px;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+        
+}

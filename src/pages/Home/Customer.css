@@ -1,0 +1,22 @@
+/**
+COLOR
+*/
+h1.title {
+  margin-bottom: 96px;
+  font-size: 56px;
+}
+
+@media (max-width: 425px) {
+  .customer {
+    display: flex;
+    flex-direction: column;
+  }
+  .customer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .customer .container .title {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+}/*# sourceMappingURL=Customer.css.map */

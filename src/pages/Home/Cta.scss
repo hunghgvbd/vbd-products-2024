@@ -1,0 +1,77 @@
+@import './../../variables.scss';
+
+.cta {
+    // position: relative;
+    // margin-bottom: -200px;
+    background: linear-gradient(to top,
+        $black 0%,
+        $black 35%,
+        $bglightgray 35%,
+        $bglightgray 100%);
+    padding-bottom: 40px;    
+    .container {
+        .cta-card {
+            display: flex;
+            justify-content: space-between;
+            justify-content: flex-start;
+            height: auto;
+            height: 450px;
+            background-color: $white;
+            border-radius: 48px;
+            padding: 80px;
+            background-size: auto;
+            background-position: right;
+            background-position-x: 430px;
+            background-repeat: no-repeat;
+            
+            .card-content {                
+                position: absolute;
+                color: $white;
+                max-width: 480px;                
+
+                h1 {
+                    font-size: 48px;
+                    margin-bottom: 16px;
+                    color: $black;
+                }
+
+                .card-description {
+                    font-size: 18px;
+                    margin-bottom: 32px;
+                    color: $fontcolor;
+                }
+
+                button {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #cta  {
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .cta-card {
+                height: auto;
+                padding: 40px;
+                background-image: none !important;
+
+                .card-content {
+                    position: relative;
+
+                    .card-title {
+                        font-size: 40px;
+                    }
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }            
+        }
+    }
+  }

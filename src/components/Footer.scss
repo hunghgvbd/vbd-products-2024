@@ -1,0 +1,172 @@
+@import './../variables.scss';
+
+.footer {
+    background-color: $black;
+    padding-bottom: 0;
+
+    .flare {
+        position: absolute;
+        background-color: $blue;
+        width: 29vw;
+        height: 29vw;
+        left: 25%;
+        // bottom: 0;
+        border-radius: 50%;
+        filter: blur(29vw * 0.28);
+        margin: calc(-0.5*29vw) 0 0 calc(-0.5*29vw);
+        // z-index: -1;
+    }
+
+    .container {
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+
+            .left-footer {
+                width: 30%;
+                
+                .vbd-description {
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #ccc;
+                    margin: 24px 0;
+                }
+            }
+    
+            .right-footer {
+                // display: grid;
+                // grid-template-columns: 1fr 1fr 1fr;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 70%;
+                // width: calc(100% - 286px);
+                justify-content: flex-end;
+
+                .text-cols {
+                    display: flex;
+                    flex-direction: column;
+                    width: 24%;
+                    margin-left: 80px;
+    
+                    .footer-title {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $white;
+                        margin-bottom: 24px;
+                    }
+                    a {
+                        font-size: 16px;
+                        color: #ccc;
+                        margin-bottom: 16px;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid $fontcolor;
+            margin-top: 48px;
+            padding: 48px 0;
+
+            .left-footer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                p {
+                    font-size: 16px;
+                    color: #ccc;
+                    margin: 0;
+                }
+                .dot {
+                    font-size: 16px;
+                    line-height: 16px;
+                    font-weight: 600;
+                    color: #ccc;
+                    margin: 0 16px;
+                }
+                a {
+                    color: #ccc;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+
+            .right-footer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                a {
+                    margin-left: 16px;
+                }
+                .social-icon {
+                    position: relative;
+                    top: 3px;
+                    
+                    &:hover {
+                        filter: brightness(130%);
+                    }
+                }
+            }
+        }
+    }    
+} 
+
+@media (max-width: 425px) {
+    #footer {
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .footer-top {
+                display: block;
+
+                .left-footer {
+                    width: 100%;
+                }
+                .right-footer {
+                    flex-direction: column;
+                    width: 100%;
+                    .text-cols {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+            .footer-bottom {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                margin-top: 0;
+
+                .left-footer {
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+
+                    .dot {
+                        display: none;
+                    }
+                    a {
+                        margin-bottom: 16px;
+                    }
+                }
+                .right-footer {
+                    margin-bottom: 16px;
+                    
+                    a {
+                        margin-left: 0;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+  }
+

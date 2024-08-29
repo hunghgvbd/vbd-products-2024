@@ -1,0 +1,57 @@
+@import './../../variables.scss';
+
+.tabs-control {
+
+  .tabs-header-wrap {
+    display: flex;
+    padding: 8px;
+    background-color: $white;
+    border-radius: 16rem;
+    width: fit-content;
+    margin: 0 auto;
+
+    .tab-item {
+      background-color: $white;
+      width: 250px;
+      border-radius: 16rem;
+      padding: 12px;
+      cursor: pointer;
+      border: none;
+      transition: .25s ease-out;
+
+      &:first-child {
+        margin-right: 4px;
+      }
+
+      &:hover {
+        background-color: $bglightgray;
+
+        span {
+          opacity: 1;
+        }
+      }
+
+      &.active {
+        background-color: $black;
+        // box-shadow: inset -2px 2px 0 0 #83b7e5, inset 2px -2px 0 0 #1a588f;
+        // box-shadow: inset 0 2px $blue-100, inset 0 -2px $blue-400;
+
+        span {
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+
+    button {
+      span {
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: $grey-800;
+        opacity: 0.9;
+        margin: 0;
+      }
+    }
+  }
+}

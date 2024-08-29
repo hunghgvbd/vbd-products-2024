@@ -1,0 +1,98 @@
+/**
+COLOR
+*/
+.talk-box {
+  background-color: #F2F2F2;
+  border-radius: 32px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 10px 9px -13px rgba(35, 38, 59, 0.1), 0 22px 38px -20px rgba(35, 38, 59, 0.2);
+}
+.talk-box span {
+  font-size: 22px;
+}
+.talk-box .location {
+  font-size: 18PX;
+}
+.talk-box .talk-box-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.talk-box .talk-box-info .description {
+  margin: 24px 0 48px 0;
+}
+.talk-box .talk-box-author {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  padding: 0 80px;
+}
+.talk-box .talk-box-author .avatar {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+.talk-box .talk-box-author .author-info {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.talk-box .talk-box-author .author-info .name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.talk-box .talk-box-author .author-info .location {
+  margin: 0;
+}
+.talk-box::before {
+  content: "";
+  position: relative;
+  background: url(./../../images/quotes-start.svg);
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  top: auto;
+  left: 0;
+}
+.talk-box::after {
+  content: "";
+  position: relative;
+  background: url(./../../images/quotes-end.svg);
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  right: 0;
+  margin-left: 740px;
+}
+
+@media (max-width: 425px) {
+  .slide-content .slide-card .talk-box {
+    padding: 40px;
+    height: auto;
+  }
+  .slide-content .slide-card .talk-box span {
+    font-size: 20px;
+  }
+  .slide-content .slide-card .talk-box .talk-box-info {
+    margin-left: 0;
+  }
+  .slide-content .slide-card .talk-box .talk-box-author {
+    padding: 0;
+  }
+  .slide-content .slide-card .talk-box::before {
+    margin-bottom: 16px;
+  }
+  .slide-content .slide-card .talk-box::after {
+    display: none;
+  }
+}/*# sourceMappingURL=TalkBox.css.map */

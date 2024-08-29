@@ -1,0 +1,57 @@
+/**
+COLOR
+*/
+section.clients {
+  background-color: #F2F2F2 !important;
+}
+
+.clients {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  text-align: center;
+}
+.clients .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.clients .clientItem {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 16px;
+}
+.clients .clientItem span {
+  color: #272F5D;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.clients .text-center {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  color: #272F5D;
+}
+
+@media (max-width: 425px) {
+  .clients .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .clients .container ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .clients .container ul li {
+    box-sizing: content-box;
+    padding: 16px;
+  }
+  .clients .container ul li img {
+    max-height: 32px;
+  }
+}/*# sourceMappingURL=Clients.css.map */

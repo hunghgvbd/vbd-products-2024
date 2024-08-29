@@ -1,0 +1,29 @@
+@import './../../variables.scss';
+
+// section.customer {
+//     // padding: 96px 0;
+//     // max-width: 1248px;
+//     // margin: auto;
+// }
+
+h1.title {
+    margin-bottom: 96px;
+    font-size: 56px;
+}
+
+@media (max-width: 425px) {
+    .customer {
+        display: flex;
+        flex-direction: column;
+
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .title {
+                font-size: 48px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+  }
