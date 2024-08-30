@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 
 
 const AppDetailPage = (props) => {
-
+debugger;
   const [htmlFileString, setHtmlFileString] = useState();
 
   async function fetchHtmlApp1() {
@@ -79,73 +79,73 @@ const AppDetailPage = (props) => {
 
   useEffect(() => {
     switch (window.location?.pathname) {
-      case '/operating-app/app1':
+      case '/products/app1':
         fetchHtmlApp1();
         break;
-      case '/operating-app/app2':
+      case '/products/app2':
         fetchHtmlApp2();
         break;
-      case '/operating-app/app3':
+      case '/products/app3':
         fetchHtmlApp3();
         break;
-      case '/operating-app/app4':
+      case '/products/app4':
         fetchHtmlApp4();
         break;
-      case '/operating-app/app5':
+      case '/products/app5':
         fetchHtmlApp5();
         break;
-      case '/operating-app/app6':
+      case '/products/app6':
         fetchHtmlApp6();
         break;
-      case '/operating-app/core3':
+      case '/products/core3':
         fetchHtmlApp7();
         break;
-      case '/operating-app/app8':
+      case '/products/app8':
         fetchHtmlApp8();
         break;
-      case '/operating-app/app9':
+      case '/products/app9':
         fetchHtmlApp9();
         break;
-      case '/operating-app/core2':
+      case '/products/core2':
         fetchHtmlApp10();
         break;
-      case '/operating-app/app11':
+      case '/products/app11':
         fetchHtmlApp11();
         break;
-      case '/operating-app/app12':
+      case '/products/app12':
         fetchHtmlApp12();
         break;
-      case '/operating-app/app13':
+      case '/products/app13':
         fetchHtmlApp13();
         break;
-      case '/operating-app/app14':
+      case '/products/app14':
         fetchHtmlApp14();
         break;
-      case '/operating-app/app15':
+      case '/products/app15':
         fetchHtmlApp15();
         break;
-      case '/operating-app/app16':
+      case '/products/app16':
         fetchHtmlApp16();
         break;
-      case '/operating-app/core1':
+      case '/products/core1':
         fetchHtmlApp17();
         break;
-      case '/operating-app/app18':
+      case '/products/app18':
         fetchHtmlApp18();
         break;
-      case '/operating-app/app19':
+      case '/products/app19':
         fetchHtmlApp19();
         break;
-      case '/operating-app/app20':
+      case '/products/app20':
         fetchHtmlApp20();
         break;
-      case '/operating-app/app21':
+      case '/products/app21':
         fetchHtmlApp21();
         break;
-      case '/operating-app/software1':
+      case '/products/software1':
         fetchHtmlApp22();
         break;
-      case '/operating-app/software2':
+      case '/products/software2':
         fetchHtmlApp23();
         break;  
       default:

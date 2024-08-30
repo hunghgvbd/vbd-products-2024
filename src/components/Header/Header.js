@@ -83,7 +83,7 @@ const Header = () => {
                 </div>
               ) : null}
             </li> */}
-            <li className={getClassNameMenu('/guides')}><Link to='/operating-app'>Sản phẩm</Link></li>
+            <li className={getClassNameMenu('/guides')}><Link to='/'>Sản phẩm</Link></li>
             <li className={getClassNameMenu('/news')}><Link to='/news'>Tin tức</Link></li>
             <li className={getClassNameMenu('/contactus')}><Link to='/contactus'>Liên hệ</Link></li>
           </ul>
@@ -118,7 +118,7 @@ const Header = () => {
     <header className={`default-theme ${theme}`}>
       <div className="header-content container">
         <div id="logo" className="brand">
-          <Link to="/operating-app">
+          <Link to="/">
             <img src={theme === 'light-theme' ? logoLight : logoDark} alt="" />
           </Link>
         </div>

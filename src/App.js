@@ -48,9 +48,9 @@ function App() {
       element: <Main />,
       // errorElement: <PageNotFound />,
       children: [
-        { index: true, element: <HomePage /> },
-        { path: "operating-app", element: <OperatingApp /> },
-        { path: "operating-app/*", element: <AppDetailPage />},
+        { index: true, element: <OperatingApp /> },
+        // { path: "operating-app", element: <OperatingApp /> },
+        { path: "products/*", element: <AppDetailPage />},
         { path: "constructor-app", element: <ConstructorApp /> },
         { path: "about", element: <AboutUs /> },
         { path: "guides/*", element: <Guides /> },

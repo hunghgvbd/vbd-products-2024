@@ -6,6 +6,8 @@ import { Link, useLocation } from 'react-router-dom';
 const CardModal = ({ data, className }) => {
   console.log('CardModal', data)
   const location = useLocation();
+  console.log(window.location?.origin);
+  debugger;
   console.log('location', location)
   return (
     <div className={`card-modal ${className}`}>
@@ -37,7 +39,7 @@ const CardModal = ({ data, className }) => {
         }
 
         {data?.type && data?.type === 'link' &&
-          <Link to={`${location?.pathname}/${data?.Id}?${encodeURI(data?.title)}`} target="_blank" className="button-card">
+          <Link to={`/products/${data?.Id}?${encodeURI(data?.title)}`} target="_blank" className="button-card">
             <Button buttonStyle="vbt-white" buttonSize="vbt-larger-icon">
               <span className='ic-btn'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">

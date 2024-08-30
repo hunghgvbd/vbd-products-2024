@@ -19,8 +19,8 @@ export default function Footer() {
           <div className='right-footer'>
             <div className='text-cols'>
               <div className='footer-title'>Hệ thống</div>
-              <Link to="/operating-app">Hệ thống vận hành cơ sở dữ liệu đất đai</Link>
-              <Link to="/constructor-app">Hệ thống xây dựng cơ sở dữ liệu đất đai</Link>
+              <Link to="/">Hệ thống vận hành cơ sở dữ liệu đất đai</Link>
+              <Link to="/">Hệ thống xây dựng cơ sở dữ liệu đất đai</Link>
             </div>
             <div className='text-cols'>
               <div className='footer-title'>Liên kết</div>
@@ -35,8 +35,8 @@ export default function Footer() {
             </div>
             <div className='text-cols'>
               <div className='footer-title'>Giới thiệu</div>
-              <Link to="/operating-app">Trang chủ</Link>
-              <Link to='/operating-app'>Hướng dẫn</Link>
+              <Link to="/">Trang chủ</Link>
+              <Link to='/'>Hướng dẫn</Link>
               <Link to='/news'>Tin tức</Link>
               <Link to='/contactus'>Liên hệ</Link>
             </div>
